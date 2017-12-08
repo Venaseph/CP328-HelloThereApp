@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: Properties
-    @IBOutlet var outputTxtField: UILabel!
+    @IBOutlet private var outputTxtField: UILabel!
     @IBOutlet var inputTxtField: UITextField!
     @IBOutlet var resetButton: UIButton!
     @IBOutlet var segColorControl: UISegmentedControl!
