@@ -47,7 +47,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         // set output to input
-        outputTxtField.text = "Hello " + textField.text!
+        // use instead of if let or guard
+        outputTxtField.text = "Hello " + (textField.text ?? "")
         switchChanged(switchState: switchCaps)
         //Return the placeholder value by setting input to nil
         inputTxtField.text = nil
